@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+      android:orientation="horizontal" 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">       
+      <Button android:id="@+id/sat" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:text=" Satellite "
+          android:onClick="onClickPreference" 
+          android:padding="6px" />
+      <Button android:id="@+id/street" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:text=" Street "
+          android:onClick="onClickPreference" 
+          android:padding="6px" />
+      <Button android:id="@+id/traffic" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:text=" Traffic "
+          android:onClick="onClickPreference" 
+          android:padding="6px" />
+      <Button android:id="@+id/normal" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:text=" Normal "
+          android:onClick="onClickPreference" 
+          android:padding="6px" />
+ </LinearLayout>
+ 
+<com.google.android.maps.MapView
+                 android:id="@+id/map_view"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:clickable="true"
+				 android:enabled="true" 
+                 android:apiKey="0nIdYLs3kXV_h4Urtu0B3tYzOJe8OPwc1fkzpGw"/>
+    
+</LinearLayout>
+
